@@ -40,17 +40,18 @@ namespace ReactUnity.UGUI
                 {
                     font = value;
 
-                    font?.Get(Context, ft => {
+                    font?.Get(Context, ft =>
+                    {
                         if (font != value) return;
 
-                        if (ft?.TmpFontAsset)
-                        {
-                            var asset = ft.TmpFontAsset;
-                            Text.font = asset;
-                            var style = ComputedStyle;
-                            RecalculateFontStyleAndWeight(style.fontStyle, style.fontWeight, style.textTransform);
-                            RecalculateLineHeight();
-                        }
+                        // if (ft?.TmpFontAsset)
+                        // {
+                        //     var asset = ft.TmpFontAsset;
+                        //     Text.font = asset;
+                        //     var style = ComputedStyle;
+                        //     RecalculateFontStyleAndWeight(style.fontStyle, style.fontWeight, style.textTransform);
+                        //     RecalculateLineHeight();
+                        // }
                     });
                 }
             }

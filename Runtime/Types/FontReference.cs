@@ -83,7 +83,7 @@ namespace ReactUnity.Types
             }
             else
             {
-                Font altFont;
+                Font altFont = null;
 #if REACT_TMP
                 var tmpFontAsset = base.Get<TMPro.TMP_FontAsset>(context, realType, realValue);
                 altFont = tmpFontAsset?.sourceFontFile;
